@@ -1,0 +1,151 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: monospace;
+    color: white;
+}
+header{
+    background-image: linear-gradient(to bottom, rgb(0, 0, 0), rgb(35, 34, 95));
+    height: 10vh;
+}
+nav{
+    flex: 1;
+}
+h1{
+    margin-left: 20px;
+}
+.nav-links{
+    display:flex;
+    list-style: none;
+    float: right;
+    margin-right: 150px;
+}
+header{
+    display:flex;
+    width: 100%;
+    margin: auto;
+    align-items: center;
+
+}
+p{
+    color: transparent;
+}
+a{
+    text-decoration: none;
+}
+.links{
+    font-size: 20px;
+    margin-right: 140px;
+    text-align: center;
+}
+.links:hover{
+    border-bottom: solid white
+}
+main{
+    height: 100vh;
+    background-image: linear-gradient(to bottom, rgb(35, 34, 95), rgb(50, 48, 158));
+}
+.rip{
+    display:grid;
+    grid-template-columns: 30% 20% 40% 10%;
+    align-items: center;
+    text-align: center;
+    height: 70.6vh;
+    animation: fadeIn 9s;
+}
+.boutmewrapper{
+    grid-column: 3/4;
+    margin-top: 100px;
+}
+.t1{
+    display: flex;
+    min-width: 120px;
+    margin-left: 160px;
+    text-decoration: underline;
+}
+h1{
+    font-size:40px;
+}
+h2{
+    text-align: left;
+    font-size: 18px;
+    margin-top: 10px;
+}
+#wespic{
+    height:50px;
+    transform: scaleX(-1);
+    margin-left: 10px;
+}
+.line {
+    position: relative;
+    top: 10%;
+    width: 100%;
+    margin: 0 auto;
+    border-right: 2px solid transparent;
+    font-size: 30px;
+    white-space: nowrap;
+    overflow: hidden;
+}
+#pic{
+    height: 200px;
+    border-radius: 60%;
+    grid-column: 1/2;
+    justify-self: end;
+    grid-row: 1/3;
+}
+
+/*Animation*/
+
+.anim-typewriter {
+    animation: typewriter 5s steps(60) 1s 1 normal both,
+    blinkTextCursor 500ms steps(40) 16 normal,
+    fadeOut 8s;
+}
+
+@keyframes fadeIn{
+    0% {
+        opacity: 0;
+    }
+    90%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+@keyframes typewriter {
+    0% {
+          width: 0;
+    }
+    100% {
+          width: 40em;
+    }
+
+}
+@keyframes fadeOut{
+    0%{
+        color: white;
+    }
+    95%{
+        color: white;
+    }
+
+    100%{
+        opacity: 1 ;
+    }
+}
+@keyframes blinkTextCursor {
+    from {
+          border-right-color: rgba(255, 255, 255, 0.75);
+    }
+    to {
+          border-right-color: transparent;
+    }
+
+    
+}
+.logo{
+    height: 60px;
+}
+/*Blog Page*/
