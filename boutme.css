@@ -15,6 +15,8 @@ nav{
 .more {
     position: relative;
     margin: -5% 0 0 30%;
+    animation: fadeIn 3s;
+
 }
 .nav-links{
     display:flex;
