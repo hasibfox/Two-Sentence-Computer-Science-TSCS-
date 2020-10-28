@@ -12,6 +12,10 @@ header{
 nav{
     flex: 1;
 }
+.more {
+    position: relative;
+    margin: -5% 0 0 30%;
+}
 h1{
     margin-left: 20px;
 }
