@@ -5,19 +5,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="boutme.css">
     <title>Two Sentence CS</title>
-</head>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script></head>
 <body>
     <header>
-        <img class= "logo" src="https://i.ibb.co/PFyJJYr/2-sentence-removebg-preview-4.png">
         <nav>
-            <ul class="nav-links">
-                <li><a class="links" href="boutme.html">Home</a></li>
-                <li><a class="links" href="blog.html">Blog</a></li>
-                <li><a class="links" href="#">Projects </a></li>
-                <li><a class="links" href="https://www.docdroid.net/IXRkGhq/resume-mhasib-pdf" target="blank">Resume</a></li>
+            <ul>
+                <img class= "logo" src="https://i.ibb.co/PFyJJYr/2-sentence-removebg-preview-4.png">
+                <li class="items" ><a href="boutme.html">Home</a></li>
+                <li class="items"><a href="blog.html">Blogs</a></li>
+                <li class="items"><a href="#">Projects</a></li>
+                <li class="items"><a href="https://www.docdroid.net/IXRkGhq/resume-mhasib-pdf" target="blank">Resume</a></li>
+                <li class="btn"><a href="#"><i class="fas fa-bars"></i></a></li>
             </ul>
-        </nav>       
+      </nav>
+          <script>
+            $(document).ready(function(){
+              $('.btn').click(function(){
+                $('.items').toggleClass("show");
+                $('ul li').toggleClass("hide");
+              });
+            });
+          </script>
+        <!--
+        
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <ul class="nav-links">
+                <li><a class="items" href="boutme.html">Home</a></li>
+                <li><a class="items" href="blog.html">Blog</a></li>
+                <li><a class="items" href="#">Projects </a></li>
+                <li><a class="items" href="https://www.docdroid.net/IXRkGhq/resume-mhasib-pdf" target="blank">Resume</a></li>
+            </ul>
+        </nav>   -->  
     </header>
+    
     <main>
         <div class="rip">
             <img id = "pic" src="https://media-exp1.licdn.com/dms/image/C4E03AQG8NPZOow8JEQ/profile-displayphoto-shrink_400_400/0?e=1606348800&v=beta&t=4fE_MMGLFoCTyhPQK2RXJ7NAjiJDbSRNBVpeyq0GVVY" alt= "facepic">
@@ -27,12 +52,16 @@
                     <img id="wespic" src="https://newsletter.blogs.wesleyan.edu/files/2019/08/bigWU_Identity_Athletics_Cardinal_2-Color-1080x1080-copy-760x759.png">
                 </div>
                 <h2>Hey! I'm Mohammad Hasib, a freshman at Wesleyan University who is trying to get a grasp at the field of computer science. I built this website for two main reasons: to reflect on my learnings and to simplify concepts down into two sentences. As with any subject, the best way to internalize what one learns is by teaching it to others and I believe that through Two Sentence CS, I can work on mastering course content myself while also providing helpful reminders my peers and passerby. I strongly encourage you to scroll down to get a better idea of who I am, some of my (prospective) projects, and my "No-Regret" outlook!</h2>
+                <h1 class = "moremob">MORE CONTENT COMING SOON !!!</h1>
+
             </div>
-            
+
         </div>
-        
-    </main>
+
+    </main> 
     <div class="more">
         <h1>MORE CONTENT COMING SOON !!!</h1>
     </div>
+    
+
 </body>
