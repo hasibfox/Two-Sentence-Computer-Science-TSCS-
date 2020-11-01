@@ -21,7 +21,7 @@ header{
     
   }
   main{
-    height: 100vh;
+    height: 150vh;
     background-image: linear-gradient(to bottom, rgb(35, 34, 95), rgb(50, 48, 158));
 }
   nav ul{
@@ -88,6 +88,7 @@ header{
     text-align: center;
     height: 70.6vh;
     animation: fadeIn 8.5s;
+
 }
 .boutmewrapper{
     grid-column: 3/4;
@@ -106,9 +107,8 @@ header{
   position: relative;
   margin: -5% 0 0 30%;
   animation: fadeIn 8.5s;
-
 }
-.more
+
 h1{
     font-size:40px;
 }
@@ -139,7 +139,7 @@ p {
     color: transparent;
     margin: 0px auto;
     animation: animated-text 5s steps(70) 1s 1 normal both, fadeOut 7.5s,
-    animated-cursor 500ms steps(40) 16 normal;
+    animated-cursor 500ms steps(40) 14 normal;
 }
 
   /* animations */
@@ -177,32 +177,27 @@ p {
       opacity:0;
   }
 }
-@media all and (max-width: 1430px){
-}
-.logo{
-    height: 60px;
-    justify-content: left;
-    padding-right: 15%;
-    animation: fadeIn 1s;
 
 
-}
 @media all and (max-width: 1030px){
-
   main{
     height: 150vh;
+  }
+  p{
+    display: none;
   }
   nav{
     padding: 5px;
   }
-
-nav ul{
+  nav ul{
     list-style: none;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     animation: none;
-
+  }
+  .more{
+    display: none;
   }
   nav ul li.items{
     width: 100%;
@@ -212,7 +207,15 @@ nav ul{
     display: block;
     margin-bottom: 30px;
   }
-  
+  nav, .logo{
+    animation: fadeIn 1.5s;
+  }
+  .rip{
+    animation: fadeIn 2.5s;
+  }
+  p{
+    opacity: 0;
+  }
   nav ul li.btn{
     display: block;
     line-height: 100px;
@@ -228,6 +231,7 @@ nav ul{
   .rip{
   display: block;
   }
+
   .t1{
       margin-left: 30%;
       }
@@ -239,6 +243,7 @@ nav ul{
       font-size: 15px;
       margin: 20px 50px 0 50px;
   }
+
   #pic{
     height: 150px;
     margin-top: 100px;
