@@ -115,7 +115,21 @@ h2{
     transform: scaleX(-1);
     margin-left: 10px;
 }
-
+.construction{
+  height:100vh;
+  width: 1519px;
+  background-color: black;
+  position: absolute;
+  z-index: 1;
+  opacity: .8;
+}
+.con{
+  width: 110%;
+  position: absolute;
+  color: white;
+  font-size: 100px;
+  text-align: center;
+}
 #pic{
     height: 200px;
     border-radius: 60%;
